@@ -1,13 +1,40 @@
-:root {
-    
+:root{
+    --menunav: #145c9c;
+    --color1: #eb9f2d;
+    --color2: #ebc570;
+    --color4: #6e999f;
+    --color5: #98cec3;
+    --text-light: #f8f1e9;
 }
 
 body {
-    background-color: #f8f1e9;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--text-light);
 }
 
+a {
+    text-decoration: none;
+}
 
-h1, p {
-    color: #8d4925
-    ;
+a:hover {
+    color: var(t);
+    text-decoration: none;
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    /* z-index: ; */
+    padding: 0 15px;
+    background-color: var(--menunav);
+    overflow-y: auto;
 }
