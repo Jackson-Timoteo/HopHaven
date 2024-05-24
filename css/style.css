@@ -229,6 +229,38 @@ h1, h2, h3, h4 {
 
 /*  */
 
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--menunav);
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: var(--text-light);
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--color4);
+    color: var(--menunav);
+}
+
+.back-to-top {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+
 @media (max-width: 1199px) {
     #header {
         left: -300px;
