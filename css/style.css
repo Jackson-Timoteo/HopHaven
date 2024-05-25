@@ -231,10 +231,6 @@ section {
     overflow: hidden;
 }
 
-.section-bg {
-    background: var(--menunav);
-    color: var(--text-light);
-}
 
 .section-title {
     padding-bottom: 30px;
@@ -262,6 +258,55 @@ section {
 .section-title p {
     margin-bottom: 0;
 }
+
+.about .container h3 {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color1);
+}
+
+.about .container ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about .container ul strong {
+    margin-left: 10px;
+}
+
+.about .container ul i {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 0;
+}
+
+.factor .count-box {
+    padding: 10px;
+    width: 100%;
+}
+
+.factor .count-box i {
+    display: block;
+    font-size: 25px;
+    float: left;
+    line-height: 0;
+}
+
+.factor .count-box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 40px;
+}
+
+.factor .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 /* btn top */
 
@@ -292,9 +337,12 @@ section {
 .back-to-top {
     visibility: visible;
     opacity: 1;
-    
 }
 
+.section-bg {
+    background: var(--menunav);
+    color: var(--text-light);
+}
 
 
 @media (max-width: 1199px) {
