@@ -143,24 +143,14 @@ h1, h2, h3, h4, h5, h6 {
 #main {
     margin-left: 300px;
 }
+
 .container,
 .container-fluid {
     padding-left: 30px;
     padding-right: 30px;
 }
-@media (max-width: 1199px) {
-    #header {
-        left: -300px;
-    }
-    #main {
-        margin-left: 0;
-    }
-    .container,
-    .container-fluid {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-}
+
+
 /** Menu Desktop **/
 .nav-menu {
     padding: 30px 0 0 0;
@@ -269,20 +259,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     border-bottom: 3px solid var(--cor-detalhes);
 }
-@media (max-width: 1024px) {
-    #hero {
-        background-attachment: fixed;
-    }
-}
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 75px;
-        line-height: 55px;
-    }
-    #hero p {
-        font-size: 25px;
-    }
-}
+
 /** Seções Gerais === tag Section ***/
 section {
     padding: 60px 0;
@@ -351,13 +328,13 @@ section {
 }
 .conquistas .count-box i {
     display: block;
-    font-size: 44px;
+    font-size: 34px;
     color: var(--cor-detalhes);
     float: left;
     line-height: 0;
 }
 .conquistas .count-box span {
-    font-size: 48px;
+    font-size: 38px;
     line-height: 40px;
     display: block;
     font-weight: 700;
@@ -401,7 +378,7 @@ section {
     width: 1px;
     height: 10px;
     transition: 2s;
-    background: var(--cor-detalhes);
+    background: var(--color1);
 }
 /* Resumo */
 .resume .resume-title {
@@ -413,7 +390,7 @@ section {
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid var(--cor-detalhes);
+    border-left: 2px solid var(--color1);
     position: relative;
 }
 .resume .resume-item h4 {
@@ -497,6 +474,7 @@ section {
     display: flex;
     justify-content: center;
 }
+
 .portfolio .portfolio-wrap .portfolio-links a {
     color: var(--texto-escuro);
     font-size: 28px;
@@ -505,12 +483,15 @@ section {
     transition: 0.3s;
     width: 50%;
 }
+
 .portfolio .portfolio-wrap .portfolio-links a:hover {
     background: var(--fundo-escuro);
 }
+
 .portfolio .portfolio-wrap .portfolio-links a+a {
     border-left: 1px solid var(--fundo-menu-lateral);
 }
+
 .portfolio .portfolio-wrap:hover::before {
     top: 0;
     right: 0;
@@ -518,9 +499,75 @@ section {
     bottom: 0;
     opacity: 1;
 }
+
 .portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
 }
-/* portfolio Detalhes */
+/* end portfolio details */
+
+
+.services .icon-box {
+    margin-bottom: 20px;
+}
+
+.services .icon  {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: var(--color1);
+    border-radius: 50%;
+    transition: 0.5;
+}
+
+.services .icon i {
+    color: var(--text-light);
+    font-size: 18px;
+}
+
+.services .icon-box:hover .icon {
+    background: var(--fundo-claro);
+}
+
+
+
+.services .icon-box:hover .icon i {
+    color: var(--texto-escuro);
+}
+
+
+
 /*  ========  voltar  ========   */
+
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 75px;
+        line-height: 55px;
+    }
+    #hero p {
+        font-size: 25px;
+    }
+}
