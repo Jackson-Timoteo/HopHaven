@@ -532,10 +532,22 @@ section {
     background: var(--fundo-claro);
 }
 
-
-
 .services .icon-box:hover .icon i {
     color: var(--texto-escuro);
+}
+
+.services .title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--text-light);
+}
+
+.services .description  {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 22px;
 }
 
 
