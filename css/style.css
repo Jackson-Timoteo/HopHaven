@@ -624,20 +624,6 @@ section {
 /*  ========  voltar  ========   */
 
 
-@media (max-width: 1199px) {
-    #header {
-        left: -300px;
-    }
-    #main {
-        margin-left: 0;
-    }
-    .container,
-    .container-fluid {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-}
-
 @media (max-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -650,5 +636,25 @@ section {
     }
     #hero p {
         font-size: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
