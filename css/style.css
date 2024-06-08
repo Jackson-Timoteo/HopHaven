@@ -621,6 +621,15 @@ section {
     border-left: 20px solid transparent;
 }
 
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
+    background: var();
+}
+
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--text-light);
+}
 /*  ========  voltar  ========   */
 
 
