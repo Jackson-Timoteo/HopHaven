@@ -719,6 +719,56 @@ section {
 }
 
 
+.portfolio-details {
+    padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slide img  {
+    width: 100%;
+}
+
+.portfolio-details .portfolio-details-slide .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255)  ;
+    opacity: 1;
+    border: 1px solid;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet:hover {
+    background-color: #012840;
+}
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(102, 122, 14, 0.5);
+}
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+
+
+
+
 
 /* Roda pé */
 #footer {
@@ -747,6 +797,8 @@ section {
 #footer .creditos a:hover {
     color: var(--texto-hover);
 }
+
+
 @media (max-width: 1199px) {
     #footer {
         position: static;
